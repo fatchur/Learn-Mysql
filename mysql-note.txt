@@ -1,0 +1,29 @@
+MYSQL UBUNTU INSTALLATION
+
+## update ubuntu
+---- sudo apt-get updte
+
+## install mysql server
+---- sudo apt-get install mysql-server
+
+
+MY NOTE:
+## when i did this for securing Mysql:
+---- mysql_secure_installation
+## It caused any problems
+
+
+## After installing Mysql server, check the installation
+---- systemctl status mysql.service
+
+
+## Enter the Mysql Server
+---- mysql -u root -p
+
+
+## Show all databases in Mysql server
+---- SHOW DATABASES;
+
+
+## Select certain database in Myql server
+---- USE <database name>;
