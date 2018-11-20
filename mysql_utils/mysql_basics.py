@@ -2,7 +2,7 @@ import mysql.connector
 
 
 class MysqlBasics():
-    def __init__(self, host="localhost", user="root", pasword="xxxx" ):
+    def __init__(self, host="localhost", user="root", password="xxxx" ):
         self.host = host
         self.user = user
         self.password = password
@@ -13,6 +13,7 @@ class MysqlBasics():
         command_string = "CREATE TABLE " + db_name + "." + table_name + " ("
         for i in range (len(col_name_list)):
             command_string = command_string + " " + col_name_list[i] + " " + col_datatype_list[i] + ", "
+        command_string = command_string[:-2]
         command_string = command_string + " )"
         print (command_string)
         self.mycursor.execute(command_string)

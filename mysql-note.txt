@@ -27,3 +27,9 @@ MY NOTE:
 
 ## Select certain database in Myql server
 ---- USE <database name>;
+
+## Sho tables in certain databases
+---- SHOW TABLES;
+
+## Get the structure (description) of table
+---- DESCRIBE <table name>;
